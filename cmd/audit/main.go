@@ -1,7 +1,7 @@
 package main
 
 import (
-	"Longinus/internal/web"
+	"github.com/Mistyzebra/Longinus/internal/web"
 )
 
 func main() {
