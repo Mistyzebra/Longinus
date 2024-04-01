@@ -1,7 +1,7 @@
 package main
 
 import (
-	"my-code-auditor/internal/web"
+	"Longinus/internal/web"
 )
 
 func main() {
