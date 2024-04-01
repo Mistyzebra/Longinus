@@ -1,11 +1,11 @@
 package web
 
 import (
-	"net/http"
 	"github.com/gin-gonic/gin"
+	"net/http"
 )
 
-// Index home page
+// Index 首页
 func Index(c *gin.Context) {
 	c.HTML(http.StatusOK, "index", gin.H{
 		"title": "首页",
