@@ -2,7 +2,7 @@ package main
 
 import (
 	"fmt"
-	"longinus/internal/cwe22"
+	"github.com/Mistyzebra/Longinus/internal/rules/cwe22"
 	"os"
 )
 
