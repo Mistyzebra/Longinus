@@ -2,13 +2,14 @@ package web
 
 import (
 	"github.com/gin-gonic/gin"
-	"net/http"
 )
 
-// Index 首页
-func Index(c *gin.Context) {
-	c.HTML(http.StatusOK, "index", gin.H{
-		"title": "首页",
-		"ctx":   c,
-	})
+func RunServer() {
+	router := gin.Default()
+	router.POST("/audit/cwe22", auditCWE22)
+	router.Run(":8080") // 在8080端口上运行
+}
+
+func auditCWE22(c *gin.Context) {
+	// 实现审计CWE-22逻辑
 }
